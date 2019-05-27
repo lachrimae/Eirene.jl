@@ -6323,7 +6323,7 @@ function hopdistance_sparse(rv,cp)
 			fringelist = findall(fringenodes)
 			fringenodes[:].= false
 		end
-		H[.!metnodes,i]=m+1
+		H[.!metnodes,i].=m+1
 	end
 	return H
 end
