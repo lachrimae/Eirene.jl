@@ -5933,10 +5933,11 @@ function edgetrace_pjs(coordinates,edges;model="pc")
 					name = "Dim 1 Faces")
 				edgetraces = [trace]
 			else
+				ax = axes(coordinates,2)
 				trace = PlotlyJS.scatter3d(
-					x = coordinates[1,verts],
-					y = coordinates[2,verts],
-					z = coordinates[3,verts],
+					x = coordinates[1,ax],
+					y = coordinates[2,ax],
+					z = coordinates[3,ax],
 					line=attr(color="#1f77b4", width=1.5),
 					name = "edge ($(verts[1]),$(verts[2]))",
 					showlegend = false,
