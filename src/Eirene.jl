@@ -5925,9 +5925,9 @@ function edgetrace_pjs(coordinates,edges;model="pc")
 					x = coordinates[1,verts],
 					y = coordinates[2,verts],
 					z = coordinates[3,verts],=#
-					x = coordinates[1, axes(coordinates,2)]
-					y = coordinates[2, axes(coordinates,2)]
-					z = coordinates[3, axes(coordinates,2)]
+					x = coordinates[1, axes(coordinates,2)],
+					y = coordinates[2, axes(coordinates,2)],
+					z = coordinates[3, axes(coordinates,2)],
 					line=attr(color="#1f77b4", width=1.5),
 					mode = "lines",
 					opacity = 0.5,
