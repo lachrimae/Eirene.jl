@@ -5428,7 +5428,7 @@ function classrep_pjs(
 	if showedges
 		faces = classrep(D,dim=dim,class=class)
 		edges = d1faces(faces)
-		T3 =  edgetrace_pjs(coords,edges,model=model	)
+		T3 =  edgetrace_pjs(coords,edges,model=model)
 		append!(data,T3)
 	end
 
@@ -5889,8 +5889,10 @@ end
 
 function edgetrace_pjs(coordinates,edges;model="pc")
 	if model != "pc"
+		print("not pc")
 		coordinates = coordinates'
 	end
+	print(coordinates)
 
 	edgetraces = []
 	if size(coordinates,1) == 2
