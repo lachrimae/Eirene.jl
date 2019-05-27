@@ -5889,7 +5889,6 @@ end
 
 function edgetrace_pjs(coordinates,edges;model="pc")
 	if model != "pc"
-		print("not pc")
 		coordinates = coordinates'
 	end
 	print(coordinates)
@@ -5920,6 +5919,7 @@ function edgetrace_pjs(coordinates,edges;model="pc")
 	elseif size(coordinates,1) == 3
 		for i = 1:size(edges,2)
 			verts = edges[:,i]
+			print("verts:", verts)
 			if edgetraces == []
 				trace = PlotlyJS.scatter3d(
 					x = coordinates[1,verts],
