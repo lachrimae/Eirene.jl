@@ -5365,7 +5365,7 @@ function classrep_pjs(
 		else
 			if embeddingobj == "dmat"
 				metricmatrix = D["input"]["genera"][classvinoldspace,classvinoldspace]
-				metricmatrix = metricmatrix - minimum(metricmatrix)
+				metricmatrix = metricmatrix .- minimum(metricmatrix)
 				for i = 1:size(metricmatrix,1)
 					metricmatrix[i,i]=0
 				end
